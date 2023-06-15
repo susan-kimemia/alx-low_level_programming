@@ -7,9 +7,9 @@
 int main(void)
 {
 int v;
-long int w; 
-long long int x; 
-char y; 
+long int w;
+long long int x;
+char y;
 float z;
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(y));
 printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(v));
