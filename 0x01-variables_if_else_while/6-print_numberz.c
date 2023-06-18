@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-int nmb;
-for (nmb = '0'; nmb <= '9'; ++nmb)
-putchar(nmb);
+int n;
+for (n = '0'; n <= '9'; n++)
+putchar(n);
 putchar('\n');
 return (0);
 }
