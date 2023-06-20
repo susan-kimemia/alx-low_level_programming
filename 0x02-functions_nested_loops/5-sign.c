@@ -17,7 +17,7 @@ else if (n == 0)
 v = 0;
 _putchar('0');
 }
-else 
+else
 {
 v = -1;
 _putchar('-');
