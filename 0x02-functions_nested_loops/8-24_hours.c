@@ -2,7 +2,7 @@
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
  * Description: printing every minute from 00:00 to 23:59
- * Return: 0 (Success) 
+ * Return: 0 (Success)
  */
 void jack_bauer(void)
 {
