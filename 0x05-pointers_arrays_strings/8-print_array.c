@@ -3,18 +3,19 @@
 
 /**
  * print_array - number of items in an array of integers
- * @a: array
+ * @a: print array
  * @n: number of items from the array
  * Return: Nothing
  */
 void print_array(int *a, int n)
 {
-int y;
-for (y = 0; y < n; y++)
+int m;
+for (m = 0; m < n; m++)
 {
-printf("%d", *(a + y));
-if (y != n - 1)
+printf("%d", *(a + m));
+if (m != n - 1)
 printf(", ");
 }
 putchar('\n');
 }
+

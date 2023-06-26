@@ -3,22 +3,22 @@
 #include <time.h>
 
 /**
- * main - password
- * Return: int 0 (Success)
+ * main - prints the password
+ * Return: int 0;
  */
 int main(void)
 {
-char str[200];
-int a = 0, rNum = 0, sm = 0;
+char str[500];
+int i = 0, rndm = 0, sum = 0;
 srand(time(NULL));
-for (a = 0; sm <= 2644; a++)
-{
-rNum = (rand() % 25) + 65;
-str[a] = rNum;
-sm = sm + rNum;
+for (i = 0; sum <= 2644; i++)
+{rndm = (rand() % 25) + 65;
+str[i] = rndm;
+sum = sum + rndm;
 }
-str[a++] = 2772 - sm;
-str[a++] = '\0';
+str[i++] = 2772 - sum;
+str[i++] = '\0';
 printf("%s\n", str);
 return (0);
 }
+
