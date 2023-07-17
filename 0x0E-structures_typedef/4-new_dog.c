@@ -1,74 +1,80 @@
 #include <stdlib.h>
 #include "dog.h"
+
 /**
  * _copy - copying the PASSED arg
  * @src: details to be copied
  * Return: PTR
  */
+
 char *_copy(char *src)
 {
-int a, lngth;
-char *pointer;
+int m;
+int metre;
+char *pp;
 if (src == NULL)
 {
-
 return (NULL);
+
 }
-for (lngth = 0; src[lngth] != '\0'; lngth++)
+for (metre = 0; src[metre] != '\0'; metre++)
 ;
-pointer = malloc(sizeof(char) * (lngth + 1));
 
-if (pointer == NULL)
+pp = malloc(sizeof(char) * (metre + 1));
+
+if (pp == NULL)
 {
 return (NULL);
 }
-for (a = 0; src[a] != '\0'; a++)
+for (m = 0; src[m] != '\0'; m++)
 {
-pointer[a] = src[a];
+pp[m] = src[m];
 }
-pointer[a] = '\0';
-return (pointer);
+pp[m] = '\0';
+
+return (pp);
 }
+
 /**
- * new_dog - Create a new dog variable
- * @name: Dogs Nameee
- * @age: dogs agee
- * @owner: dogs owneer
- * Return: PTR
+ * new_dog - var new dog
+ * @name: nm
+ * @age: aggee
+ * @owner: owwwwwnerr
+ * Return: poinnterRRR
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-char *_new_name, *_nieew_owner;
-dog_t *simba;
+char *newname;
+char *newowner;
+dog_t *s;
 
 if (name == NULL || owner == NULL)
 {
+
 return (NULL);
 }
-simba = malloc(sizeof(dog_t));
-if (simba == NULL)
+s = malloc(sizeof(dog_t));
+if (s == NULL)
 {
-
 return (NULL);
 }
-_new_name = _copy(name);
-if (_new_name == NULL)
+newname = _copy(name);
+if (newname == NULL)
 {
-free(simba);
+free(s);
 return (NULL);
 }
-(*simba).name = _new_name;
-
-(*simba).age = age;
-
-_nieew_owner = _copy(owner);
-if (_nieew_owner == NULL)
+(*s).name = newname;
+(*s).age = age;
+newowner = _copy(owner);
+if (newowner == NULL)
 {
-free((*simba).name);
-free(simba);
+free((*s).name);
+free(s);
 return (NULL);
 }
-(*simba).owner = _nieew_owner;
-
-return (simba);
+(*s).owner = newowner;
+return (s);
 }
+
