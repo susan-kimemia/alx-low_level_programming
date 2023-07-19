@@ -1,6 +1,8 @@
 #include "function_pointers.h"
 /**
  * int_index - seeks forr int
+ * @size: the SIZE
+ * @cmp: compares
  * @array: The array
  * PTR being compared
  * Return: Index of 1st  element
@@ -12,7 +14,7 @@ int x;
 if (array && cmp)
 {
 for (x = 0; x < size; x++)
-{ 
+{
 if (cmp(array[x]) != 0)
 return (x);
 }
