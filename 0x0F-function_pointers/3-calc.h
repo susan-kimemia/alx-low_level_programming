@@ -1,7 +1,7 @@
 #ifndef CALC_H_
 #define CALC_H_
 #include <string.h>
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * struct op - STRUCT

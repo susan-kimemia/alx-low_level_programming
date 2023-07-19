@@ -32,6 +32,6 @@ break;
 }
 printf("%02hhx ", a[x]);
 }
-return (0); 
+return (0);
 }
 

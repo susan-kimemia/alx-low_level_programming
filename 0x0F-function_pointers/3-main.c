@@ -1,12 +1,12 @@
 #include "3-calc.h"
-/** 
+/**
  * main - main funct, operates simple operat..
  * @argc: NUM Arg.
  * @argv: Arr Arg.
  * Return: 0 (Success)
- */ 
- int main(int argc, char *argv[]) 
- { 
+ */
+int main(int argc, char *argv[])
+{
 int arg_1, arg_2;
 int outcome;
 char q;
