@@ -5,11 +5,11 @@
  * @name: the name being printed
  * @f: PTRR 2 the printing func...
  */
-void print_name(char *name, void (*f)(char *)) 
-{ 
-if (!name || !f) 
-return;
+void print_name(char *name, void (*f)(char *))
+{
+if (!name || !f)
 
+return;
 f(name);
 }
 
