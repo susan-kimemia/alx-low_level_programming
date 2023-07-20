@@ -3,7 +3,8 @@
 /**
  * sum_them_all - summation
  * @n: NUM.arg
- * Return: sum
+ * @...: var num
+ * Return: If n == 0 - 0 else sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
