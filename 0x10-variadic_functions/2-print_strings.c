@@ -1,8 +1,12 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 /**
  * print_strings - it PRINTING THE STR
  * @separator: separator
  * @n: num of ARG
+ * @...: num of str
+ * Return: void
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -26,3 +30,4 @@ printf("%s%s", separator, string);
 printf("\n");
 va_end(list);
 }
+
