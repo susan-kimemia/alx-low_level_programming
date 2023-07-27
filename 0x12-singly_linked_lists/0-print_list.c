@@ -1,5 +1,5 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 /**
  * print_list - whole Elemntss of the args
  * @h: PTR
