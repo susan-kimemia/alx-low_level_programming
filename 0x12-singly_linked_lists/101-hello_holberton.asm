@@ -3,19 +3,18 @@ section .data
 
 section .text
     extern printf
-    global main
 
+global main
 main:
-    ; Set up the stack frame (optional in x86_64)
-    push rbp
-    mov rbp, rsp
+    ; Call printf with the address of the hello string as the argument
+    mov rdi, hello   ; Set rdi to the address of the hello string
+    call printf      ; Call printf with the argument in rdi
 
-    ; Call printf with the address of the string 'hello'
-    lea rdi, [hello]
-    call printf
+    ; Exit the program
+    mov rax, 60      ; syscall number for sys_exit
+    xor edi, edi     ; exit status 0
+    syscall          ; invoke syscall
 
-    ; Clean up the stack frame and return
-    mov rsp, rbp
-    pop rbp
-    ret
+section .bss
+    ; Reserve space for any uninitialized data, if needed
 
