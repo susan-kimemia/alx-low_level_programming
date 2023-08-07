@@ -21,7 +21,7 @@ char buf[1024];
 
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n"); 
+dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 exit(97);
 }
 src = open(argv[1], O_RDONLY);
@@ -44,7 +44,7 @@ check_IO_stat(closedest, dest, NULL, 'C');
 return (0);
 }
 
-/** 
+/**
  * check_IO_stat - Checkss if a file can be open or closed
  * @stat: file descriptor of opened file
  * @filename: filename
